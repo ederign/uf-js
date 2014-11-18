@@ -15,19 +15,20 @@ Uberfire JS Angular Integrations Demo
 4. Try Uberfire Screens:
 
 - Screens hello World
-
+    ```html
     <!-- Uberfire Component-->
     <uberfirecomponent id="id1" uf-component="welcome"></uberfirecomponent>
     <!-- <uberfireperspective id="id1" uf-component="HomePerspective"></uberfirecomponent> -->
-
+    ```
 - Passing parameters from angular to uberfire
-
+    ```html
     <!-- Uberfire Component-->
     <uberfirecomponent id="id1" name="John Connor" uf-component="welcome"></uberfirecomponent>
     <!-- <uberfireperspective id="id1" uf-component="HomePerspective"></uberfirecomponent> -->
-
+    ```
 5. Try Uberfire Perspectives
-
+  ```html
     <!-- Uberfire Component-->
     <!-- <uberfirecomponent id="id1" name="John Connor" uf-component="welcome"></uberfirecomponent> -->
     <uberfireperspective id="id1" uf-component="HomePerspective"></uberfirecomponent>:
+    	```
