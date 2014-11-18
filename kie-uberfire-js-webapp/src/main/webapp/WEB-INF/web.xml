@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+  <distributable/>
+
+  <!--<filter>-->
+  <!--<filter-name>Security Filter</filter-name>-->
+
+  <!--<filter-class>org.picketlink.authentication.web.AuthenticationFilter</filter-class>-->
+
+  <!--<init-param>-->
+  <!--<param-name>authType</param-name>-->
+  <!--<param-value>org.uberfire.client.context.NoAuthenticationScheme</param-value>-->
+  <!--</init-param>-->
+  <!--<init-param>-->
+  <!--<param-name>form-login-page</param-name>-->
+  <!--<param-value>/login.jsp</param-value>-->
+  <!--</init-param>-->
+  <!--<init-param>-->
+  <!--<param-name>host-page</param-name>-->
+  <!--<param-value>/showcase.html</param-value>-->
+  <!--</init-param>-->
+  <!--<init-param>-->
+  <!--<param-name>forceReAuthentication</param-name>-->
+  <!--<param-value>true</param-value>-->
+  <!--</init-param>-->
+  <!--</filter>-->
+
+  <!--<filter-mapping>-->
+  <!--<filter-name>Security Filter</filter-name>-->
+  <!--<url-pattern>/showcase.html</url-pattern>-->
+  <!--</filter-mapping>-->
+
+  <!--<filter-mapping>-->
+  <!--<filter-name>Security Filter</filter-name>-->
+  <!--<url-pattern>/uf_security_check</url-pattern>-->
+  <!--</filter-mapping>-->
+
+  <!--<filter-mapping>-->
+  <!--<filter-name>Security Filter</filter-name>-->
+  <!--<url-pattern>*.erraiBus</url-pattern>-->
+  <!--</filter-mapping>-->
+
+  <!--<servlet>-->
+  <!--<servlet-name>GoogleGadget</servlet-name>-->
+  <!--<servlet-class>org.uberfire.backend.server.impl.GoogleGadgetServlet</servlet-class>-->
+  <!--<load-on-startup>1</load-on-startup>-->
+  <!--</servlet>-->
+
+  <!--<servlet-mapping>-->
+  <!--<servlet-name>GoogleGadget</servlet-name>-->
+  <!--<url-pattern>/org.uberfire.UberfireShowcase/google.gadget</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <filter-mapping>
+    <filter-name>Cors Filter</filter-name>
+    <url-pattern>*.erraiBus</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>Cors Filter</filter-name>
+
+    <filter-class>org.uberfire.backend.server.impl.CorsFilter</filter-class>
+
+  </filter>
+
+  <servlet>
+    <servlet-name>ErraiServlet</servlet-name>
+    <servlet-class>org.jboss.errai.bus.server.servlet.DefaultBlockingServlet</servlet-class>
+
+    <init-param>
+      <param-name>service-locator</param-name>
+      <param-value>org.jboss.errai.cdi.server.CDIServiceLocator</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ErraiServlet</servlet-name>
+    <url-pattern>*.erraiBus</url-pattern>
+  </servlet-mapping>
+
+
+  <!--<servlet>-->
+  <!--<servlet-name>FileUploadServlet</servlet-name>-->
+  <!--<servlet-class>org.uberfire.server.FileUploadServlet</servlet-class>-->
+  <!--</servlet>-->
+  <!--<servlet-mapping>-->
+  <!--<servlet-name>FileUploadServlet</servlet-name>-->
+  <!--<url-pattern>/org.uberfire.UberfireShowcase/defaulteditor/upload/*</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <!--<servlet>-->
+  <!--<servlet-name>FileDownloadServlet</servlet-name>-->
+  <!--<servlet-class>org.uberfire.server.FileDownloadServlet</servlet-class>-->
+  <!--</servlet>-->
+  <!--<servlet-mapping>-->
+  <!--<servlet-name>FileDownloadServlet</servlet-name>-->
+  <!--<url-pattern>/org.uberfire.UberfireShowcase/defaulteditor/download/*</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <listener>
+    <listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
+  </listener>
+
+  <resource-env-ref>
+    <description>Object factory for the CDI Bean Manager</description>
+    <resource-env-ref-name>BeanManager</resource-env-ref-name>
+    <resource-env-ref-type>javax.enterprise.inject.spi.BeanManager</resource-env-ref-type>
+  </resource-env-ref>
+
+  <resource-env-ref>
+    <description>Object factory for the Errai Service</description>
+    <resource-env-ref-name>ErraiService</resource-env-ref-name>
+    <resource-env-ref-type>org.jboss.errai.bus.server.service.ErraiService</resource-env-ref-type>
+  </resource-env-ref>
+
+  <welcome-file-list>
+    <welcome-file>showcase.html</welcome-file>
+  </welcome-file-list>
+</web-app>

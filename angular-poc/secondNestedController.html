@@ -1,0 +1,10 @@
+<div id="template"  ng-controller="secondControllerScope">
+    <h3>Second controller (inside First)</h3>
+    <strong>First name (from First):</strong> {{firstName}}<br />
+    <strong>Last name (new variable):</strong> {{lastName}}<br />
+    <strong>Full name:</strong> {{getFullName()}}<br />
+    <br />
+    <label>Set the first name: <input type="text" ng-model="firstName"/></label><br />
+    <label>Set the last name: <input type="text" ng-model="lastName"/></label><br />
+    <br />
+</div>

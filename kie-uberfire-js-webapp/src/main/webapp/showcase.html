@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>UberFire Showcase</title>
+    <link rel="stylesheet" href="org.uberfire.KieUberfireJS/css/uberfire-loading.css">
+    <link rel="stylesheet" href="org.uberfire.KieUberfireJS/css/uberfire-showcase.css">
+    <link rel="stylesheet" href="org.uberfire.KieUberfireJS/css/ruleflow.css">
+</head>
+<body>
+
+<!-- loading indicator. the js app hides this once it's loaded. -->
+<div id="loading">
+    <div class="loading-indicator">
+        <img src="org.uberfire.KieUberfireJS/images/loading-icon.gif" width="32" height="32" style="margin-right: 8px; float: left; vertical-align: top;"/>
+        Please wait<br/><span id="loading-msg">Loading application...</span>
+    </div>
+</div>
+
+<!--
+ANGULAR
+-->
+<div ng-app="myapp">
+    Eder
+    <input type="text" ng-model="sometext"/>
+
+    <h1>Hello {{ sometext }}!</h1>
+
+    <uberfirecomponent id="id1" name="Eder" uf-component="welcome"></uberfirecomponent>
+
+    <!--<uberfireperspective id="id2" uf-component="PerspectiveEditorPerspective"></uberfireperspective>-->
+
+    <!--<uberfireperspective id="id3" uf-component="DynamicPerspective"></uberfireperspective>-->
+
+</div>
+
+<script type="text/javascript">
+
+    uberfireAngularAppName = "myapp";
+
+</script>
+
+<!-- The GWT js file generated at compile time -->
+<script type="text/javascript" src="org.uberfire.KieUberfireJS/org.uberfire.KieUberfireJS.nocache.js"></script>
+
+<script type="text/javascript" src="js/angular-1.0.7.min.js"></script>
+<script type="text/javascript" src="js/uberfire.components.js"></script>
+</body>
+</html>

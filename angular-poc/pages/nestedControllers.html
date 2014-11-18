@@ -1,0 +1,29 @@
+    <div class="jumbotron text-center">
+        <p>{{ message }}</p>
+
+
+        <div ng-controller="firstControllerScope">
+            <h3>First controller</h3>
+            <strong>First name:</strong> {{firstName}}<br />
+            <br />
+            <label>Set the first name: <input type="text" ng-model="firstName"/></label><br />
+            <br />
+
+            <uberfireangularperspective id="id3" uf-component="dynamicPerspective"></uberfireangularperspective>
+
+            <div>
+                    <div id="template"  ng-controller="thirdControllerScope">
+                        <h3>Third controller (inside First)</h3>
+                        <strong>First name (from First):</strong> {{firstName}}<br />
+                        <strong>Last name (new variable):</strong> {{lastName}}<br />
+                        <strong>Full name:</strong> {{getFullName()}}<br />
+                        <br />
+                        <label>Set the first name: <input type="text" ng-model="firstName"/></label><br />
+                        <label>Set the last name: <input type="text" ng-model="lastName"/></label><br />
+                        <br />
+                    </div>
+            </div>
+
+        </div>
+
+    </div>

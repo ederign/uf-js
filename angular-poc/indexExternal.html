@@ -1,0 +1,75 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+    <!-- define angular app -->
+    <html ng-app="myapp">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+      <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+      <link rel="stylesheet" href="css/gwt-bootstrap.css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="http://127.0.0.1:8080/uberfire/org.uberfire.KieUberfireJS/css/uberfire-showcase.css">
+      <link rel="stylesheet" href="http://127.0.0.1:8080/uberfire/org.uberfire.KieUberfireJS/css/ruleflow.css">
+      <link rel="stylesheet" href="http://127.0.0.1:8080/uberfire/org.uberfire.KieUberfireJS/css/font-awesome.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" />
+
+
+    </head>
+    <body ng-controller="mainController">
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Angular + Uberfire ShowCase</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#perspectiveEditor">Perspective Editor</a></li>
+              <li><a href="#dynamicPerspective">Dynamic Perspective</a></li>
+              <li><a href="#nestedControllers">Nested Controllers</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+  <div class="container">
+        <div ng-view></div>
+
+    </div>
+
+
+<script type="text/javascript">
+
+    uberfireAngularAppName = "myapp";
+
+</script>
+<script type="text/javascript">
+
+    erraiBusApplicationRoot = "http://127.0.0.1:8080/uberfire"
+
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script type="text/javascript" src="http://127.0.0.1:8080/uberfire/org.uberfire.KieUberfireJS/org.uberfire.KieUberfireJS.nocache.js"></script>
+<script type="text/javascript" src="js/uberfire.components.js"></script>
+<script src="js/app-script.js"></script>
+
+<script>
+</script>
+</body>
+</html>
+
+
+
+
+
+

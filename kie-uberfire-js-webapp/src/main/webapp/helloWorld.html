@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>UberFire Showcase</title>
+    <link rel="stylesheet" href="org.uberfire.KieUberfireJS/css/uberfire-loading.css">
+    <link rel="stylesheet" href="org.uberfire.KieUberfireJS/css/uberfire-showcase.css">
+    <link rel="stylesheet" href="org.uberfire.KieUberfireJS/css/ruleflow.css">
+</head>
+<body>
+
+<!--
+ANGULAR
+-->
+<div ng-app="myapp">
+
+    <input type="text" ng-model="sometext"/>
+
+    <h1>Angular echo: {{ sometext }}</h1>
+
+    <uberfirecomponent id="id1" name="Eder" uf-component="welcome"></uberfirecomponent>
+
+</div>
+
+<!--Uberfire JS API -->
+<script type="text/javascript" src="http://127.0.0.1:8080/uberfire/org.uberfire.KieUberfireJS/org.uberfire.KieUberfireJS.nocache.js"></script>
+<script type="text/javascript" src="js/angular-1.0.7.min.js"></script>
+<!--Uberfire Angular Directives -->
+<script type="text/javascript" src="js/uberfire.components.js"></script>
+</body>
+</html>

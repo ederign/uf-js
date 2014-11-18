@@ -96,6 +96,8 @@ See the nested controllers in action, is a external angular component, with a ub
 
 Using JBoss:
 ------------
+Demo video: https://www.youtube.com/watch?v=mXMny4AuHIU
+
 
 1-) Download our compiled War for EAP 7.1 (jboss-as-7.1.1.Final)
 

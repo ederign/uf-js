@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="org.uberfire.UberfireShowcase/css/uberfire-loading.css">
+    <link rel="stylesheet" href="org.uberfire.UberfireShowcase/css/uberfire-showcase.css">
+    <link rel="stylesheet" href="org.uberfire.UberfireShowcase/css/ruleflow.css">
+</head>
+<body>
+<!--
+ANGULAR
+-->
+<div ng-app="myapp">
+
+    <input type="text" ng-model="sometext"/>
+
+    <h1>Example {{ sometext }}</h1>
+
+    <uberfireperspective id="id2" uf-component="PerspectiveEditorPerspective"></uberfireperspective>
+
+</div>
+
+
+<!-- The GWT js file generated at compile time -->
+<script type="text/javascript" src="http://127.0.0.1:8080/uberfire/org.uberfire.KieUberfireJS/org.uberfire.KieUberfireJS.nocache.js"></script>
+<script type="text/javascript" src="js/angular-1.0.7.min.js"></script>
+<script type="text/javascript" src="js/uberfire.components.js"></script>
+
+
+</body>
+</html>
