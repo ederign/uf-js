@@ -15,11 +15,11 @@ Uberfire JS Angular Integrations Demo
 4. Try Uberfire Screens:
 
 - Screens hello World
-    ```
+    <pre><code>This is a code block.
     <!-- Uberfire Component-->
     <uberfirecomponent id="id1" uf-component="welcome"></uberfirecomponent>
     <!-- <uberfireperspective id="id1" uf-component="HomePerspective"></uberfirecomponent> -->
-    ```
+    </code></pre>
 - Passing parameters from angular to uberfire
     ```
     <!-- Uberfire Component-->
@@ -31,4 +31,4 @@ Uberfire JS Angular Integrations Demo
     <!-- Uberfire Component-->
     <!-- <uberfirecomponent id="id1" name="John Connor" uf-component="welcome"></uberfirecomponent> -->
     <uberfireperspective id="id1" uf-component="HomePerspective"></uberfirecomponent>:
-   ```
+   ``
