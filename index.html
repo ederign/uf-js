@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>UberFire Showcase</title>
+    <link rel="stylesheet" href="bower-distributions/css/uberfire-loading.css">
+    <link rel="stylesheet" href="bower-distributions/css/uberfire-showcase.css">
+    <link rel="stylesheet" href="bower-distributions/css/ruleflow.css">
+</head>
+<body>
+<iframe id="__gwt_historyFrame" style="width: 0; height: 0; border: 0"></iframe>
+
+
+<div ng-app="myapp">
+    What is your name?
+    <input type="text" ng-model="sometext"/>
+
+    <h1>Hello {{ sometext }}</h1>
+
+    <!-- Uberfire Component-->
+    <!-- <uberfirecomponent id="id1" name="Eder" uf-component="welcome"></uberfirecomponent> -->
+    <uberfireperspective id="id1" uf-component="HomePerspective"></uberfirecomponent>
+</div>
+
+
+<script type="text/javascript">
+    erraiBusRemoteCommunicationEnabled = false;
+    uberfireAngularAppName = "myapp";
+</script>
+
+<!--
+ANGULAR
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script type="text/javascript" src="bower-distributions/js/uberfire.components.js"></script>
+
+<!-- The GWT js file generated at run time -->
+<script type="text/javascript" src='bower-distributions/org.uberfire.UfJs.nocache.js'></script>
+
+</body>
+</html>

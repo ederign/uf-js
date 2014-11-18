@@ -1,0 +1,14 @@
+{
+  "name": "uf-js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ederign/uf-js",
+  "authors": [
+    "ederign <ignatowicz@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "uf-js-client-only/",
+    "pom.xml"
+  ]
+}
