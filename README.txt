@@ -56,7 +56,7 @@ Uberfire Full Distribution + Angular:
 
 1. Clone and Build Uberfire Fork
 	git clone git@github.com:ederign/uberfire.git
-	mvn clean install
+	mvn clean install Dmaven.test.skip=true
 
 
 Using Jetty:
